@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/border_dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/icon_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:src="@drawable/ic_reset_pass" />
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/TextLarge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="@string/reset_pass" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/line_bg" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/btn_browser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/filePath"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/filePath"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"
+            android:background="@drawable/border_button"
+            android:text="@string/browse"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/filePath"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_browser"
+            android:hint="@string/file_path"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/filename"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/filePath"
+            android:layout_below="@id/filePath"
+            android:hint="@string/file_name"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/file_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/filename"
+            android:layout_alignLeft="@id/btn_browser"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/btn_browser"
+            android:layout_alignTop="@id/filename"
+            android:layout_below="@id/btn_browser"
+            android:gravity="center"
+            android:text="@string/bak"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/action_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/KeyButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/KeyButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</LinearLayout>

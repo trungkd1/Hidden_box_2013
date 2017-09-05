@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_aris" >
+
+    <TextView
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/action_panel"
+        android:layout_below="@id/text_title"
+        android:background="@color/blue_aris"
+        android:divider="@color/blue_aris" />
+
+    <LinearLayout
+        android:id="@+id/action_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok"
+            style="@style/KeyButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@android:string/ok" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/KeyButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ARIS Smart HiddenBox</string>
+    <string name="set_password">Thiết lập mật khẩu</string>
+    <string name="confirm_password">Nhắc lại mật khẩu</string>
+    <string name="password_not_match">Mật khẩu không khớp</string>
+    <string name="current_pass_invalid">Mật khẩu hiện tại không có giá trị</string>
+    <string name="incorrect">Không đúng</string>
+    <string name="login_code">Mã đăng nhập</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="deselect_all">Bỏ chọn tất cả</string>
+    <string name="delete">Xóa</string>
+    <string name="unHide">Hủy ẩn</string>
+    <string name="cancel">Hủy</string>
+    <string name="function">Chức năng</string>
+    <string name="setting">Thiết lập</string>
+    <string name="manage">Quản lý</string>
+    <string name="mode">Chế độ màn hình</string>
+    <string name="back_up">Sao lưu</string>
+    <string name="restore">Phục hồi</string>
+    <string name="add">Thêm</string>
+    <string name="accept">Chấp nhận</string>
+    <string name="ok">OK</string>
+    <string name="hide">Ẩn</string>
+    <string name="hiding">Đang ẩn file</string>
+    <string name="unhiding">Đang hủy ẩn file</string>
+    <string name="loading">Đang tải</string>
+    <string name="deleting">Đang Xóa</string>
+    <string name="category">Category</string>
+    <string name="audio">Audio</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="select">Chọn</string>
+    <string name="sort">Sắp xếp</string>
+    <string name="sort_size">Sắp xếp theo dung lượng</string>
+    <string name="sort_name">Sắp xếp theo tên</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="reset_pass">Đổi mật khẩu</string>
+    <string name="please_input_password"> Xin vui lòng nhập mật khẩu mới</string>
+    <string name="saved_new_password">Lưu mật khẩu mới</string>
+    <string name="file_path">Thư mục</string>
+    <string name="file_name">Tên file</string>
+    <string name="file">File</string>
+    <string name="browse">Duyệt</string>
+    <string name="current_pass">Mật khẩu hiện tại</string>
+    <string name="new_pass">Mật khẩu mới</string>
+    <string name="bak">.bak</string>
+    <string name="gallery">Dạng lưới</string>
+    <string name="list">Dạng danh sách</string>
+    <string name="import_title">Phục hồi</string>
+    <string name="export_title">Sao lưu</string>
+    <string name="user_guide">Hướng dẫn sử dụng</string>
+    <string name="title_privacy">Quyền riêng tư</string>
+    <string name="accept_privacy">Chấp nhận</string>
+    <string name="refuse_privacy">Từ chối</string>
+    <string name="content_privacy">Chính sách bảo mật này sẽ bảo vệ các thông tin mà bạn cung cấp khi bạn sử dụng ứng dụng này. \n  Ứng dụng được cam kết đảm bảo sự riêng tư của bạn được bảo vệ. Chúng tôi sẽ yêu cầu bạn cung cấp thông tin nhất định mà bạn có thể xác định được khi sử dụng ứng dụng này, bạn có thể yên tâm rằng nó sẽ chỉ được sử dụng theo đúng cam kết bảo mật này.</string>
+    <string name="dismiss_help">Đóng</string>
+    <string name="title_help">Hướng dẫn sử dụng</string>
+    <string name="import_empty">Bạn phải chọn tập tin để phục hồi</string>
+    <string name="import_file_not_exit">Tập tin bạn chọn không tồn tại. Xin vui lòng chọn tập tin khác.</string>
+    <string name="export_empty">Bạn phải chọn thư mục và tên tập tin để tạo tập tin sao lưu.</string>
+    <string name="export_folder_not_exit">Thư mục bạn chọn không tồn tại. Xin vui lòng chọn thư mục khác.</string>
+    <string name="user_guide_url">file:///android_asset/help_vn.html</string>
+    <string name="unmount_sdcard">Chúng tôi cần thẻ nhớ của bạn để tiếp tục. Vui lòng gắn nó vào!</string>
+      <!--Restore error  -->
+    <string name="restore_error">Không thể khôi phục tập tin sao lưu: %s</string>
+    <string name="restore_error_nofiles">Không có tập tin ẩn nào trong tập tin sao lưu: %s</string>
+    <string name="no_restore_folder">Thư mục %s Không tồn tại trên SDcard</string>
+      <!--Back up file error -->
+    <string name="backup_error">Không thể tạo tập tin sao lưu: %s</string>
+        
+
+</resources>

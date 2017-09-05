@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="@color/gray_light"
+    android:minWidth="130dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_popup_hide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_hide_bg" />
+
+            <TextView
+                android:id="@+id/text_hide"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/hide" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/menu_popup_sort_size"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/image_sort_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" 
+                android:src="@drawable/ic_sort_asc"/>
+
+            <TextView
+                android:id="@+id/text_sort_size"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/sort_size"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_sort_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/image_sort_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" 
+            android:src="@drawable/ic_sort_asc"/>
+
+        <TextView
+            android:id="@+id/text_sort_name"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:text="@string/sort_name" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/menu_popup_sort"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+ 		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" 
+            android:src="@drawable/menu_sort_bg"/>
+
+        <TextView
+            android:id="@+id/text_sort"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:text="@string/sort" />
+        </LinearLayout>
+         <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_change_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+ 		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+            <ImageView
+                android:id="@+id/icon_changepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_changepass_bg" />
+
+            <TextView
+                android:id="@+id/text_changepass"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/change_password" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_user_guide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon_userguide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_userguide_bg" />
+
+            <TextView
+                android:id="@+id/text_userguide"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/user_guide" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_display_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_gallery_bg" />
+
+            <TextView
+                android:id="@+id/text_gallery"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/gallery" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_display_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_list_bg" />
+
+        <TextView
+            android:id="@+id/text_list"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:text="@string/list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_add_bg" />
+
+            <TextView
+                android:id="@+id/text_add"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/add" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_manage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/icon_mange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_mange_bg" />
+
+        <TextView
+            android:id="@+id/text_mange"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:text="@string/manage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_unhide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon_unhide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_unhide_bg" />
+
+            <TextView
+                android:id="@+id/text_unhide"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/unHide" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/icon_detete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_delete_bg" />
+
+            <TextView
+                android:id="@+id/text_delete"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/delete" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_restore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_restore_bg" />
+
+            <TextView
+                android:id="@+id/text_restore"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/restore" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_backup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+ 		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_backup_bg" />
+
+            <TextView
+                android:id="@+id/text_backup"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/back_up" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_select_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_selectall_bg" />
+
+            <TextView
+                android:id="@+id/text_select_all"
+                style="@style/TextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:text="@string/select_all" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_popup_deselect_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_deselectall_bg" />
+
+        <TextView
+            android:id="@+id/text_deselect_all"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:text="@string/deselect_all" />
+    </LinearLayout>
+    
+</LinearLayout>

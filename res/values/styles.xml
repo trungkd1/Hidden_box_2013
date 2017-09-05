@@ -1,0 +1,95 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PopupItemStyle">
+        <item name="android:background">#FFA0A0A0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="MyImageView">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="CustomEditText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="KeyButton">
+        <item name="android:background">@drawable/key_default_bg</item>
+        <item name="android:textSize">46sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextSmall">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    
+    <style name="TextSmallCenter">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue_aris</item>
+    </style>
+        <style name="TextSmallLeft">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/blue_aris</item>
+        <item name="android:textStyle">bold</item>
+         <item name="android:textSize">@dimen/text_size_title_privacy</item>
+    </style>
+    <style name="TextLarge">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/blue_aris</item>
+    </style>
+    
+
+    <style name="KeyButtonDialog">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue_aris</item>
+    </style>
+
+    <style name="OptionMenuButton">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+</resources>

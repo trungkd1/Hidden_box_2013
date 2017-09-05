@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_unhide_selected" android:state_pressed="true"/>
+    <item android:state_enabled="false" android:drawable="@drawable/ic_unhide_disable"></item>
+    <item android:drawable="@drawable/ic_unhide" android:state_enabled="true"></item>
+
+</selector>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ARIS Smart HiddenBox</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="set_password">Set Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="current_pass_invalid">Current pass invalid!</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="password_here">Pass here</string>
+    <string name="login_code">Login code</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="delete">Delete</string>
+    <string name="unHide">UnHide</string>
+    <string name="cancel">Cancel</string>
+    <string name="function">Function</string>
+    <string name="setting">Setting</string>
+    <string name="manage">Manage</string>
+    <string name="mode">View Mode</string>
+    <string name="back_up">Back up</string>
+    <string name="restore">Restore</string>
+    <string name="add">Add</string>
+    <string name="mode">Mode</string>
+    <string name="accept">Accept</string>
+    <string name="ok">OK</string>
+    <string name="hide">Hide</string>
+    <string name="hiding">Hiding file</string>
+    <string name="unhiding">UnHiding file</string>
+    <string name="loading">Loading</string>
+    <string name="deleting">Deleting</string>
+    <string name="category">Category</string>
+    <string name="audio">Audio</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="select">Select</string>
+    <string name="sort">Sort</string>
+    <string name="sort_size">Sort Size</string>
+    <string name="sort_name">Sort Name</string>
+    <string name="change_password">Change Pass</string>
+    <string name="please_input_password"> Input a new password, Please!</string>
+    <string name="saved_new_password">Saved a new password</string>
+    <string name="file_path">File Path</string>
+    <string name="file_name">File Name</string>
+    <string name="browse">Browse</string>
+    <string name="current_pass">Current pass</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="new_pass">New pass</string>
+    <string name="bak">.bak</string>
+    <string name="gallery">Gallery</string>
+    <string name="list">List</string>
+    <string name="import_title">Restore</string>
+    <string name="export_title">Back up</string>
+    <string name="user_guide">User Guide</string>
+    <string name="title_privacy">Privacy</string>
+    <string name="accept_privacy">Accept</string>
+    <string name="refuse_privacy">Refuse</string>
+    <string name="content_privacy">This privacy policy will protect any information that you give when you use this application.\n The application is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be indentified when using this application, then you can be assured that it will only be used in accordance with this privacy statement.</string>
+    <string name="dismiss_help">Dismiss</string>
+    <string name="title_help">User Guide</string>
+    <string name="import_empty">You have to choose file to restore.</string>
+    <string name="import_file_not_exit">Your file is not exist. Please choose another one.</string>
+    <string name="export_empty">You have to choose folder and filename to create backup file.</string>
+    <string name="export_folder_not_exit">Your folder is not exist. Please choose another one.</string>
+    <string name="file">File</string>
+    <string name="user_guide_url">file:///android_asset/help.html</string>
+    <string name="unmount_sdcard">We need your Sdcard to continue. Please plugin it!</string>
+    <!--Restore error  -->
+    <string name="restore_error">Can not restore the backup file: %s</string>
+    <string name="restore_error_nofiles">There is no hidden files in the backup file: %s</string>
+    <string name="no_restore_folder">Folder %s is not exist in the SDcard</string>
+    <!--Back up file error -->
+    <string name="backup_error">Can not create the backup file: %s</string>
+
+</resources>

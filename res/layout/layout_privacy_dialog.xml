@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/border_dialog"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/img_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_privacy" />
+
+        <TextView
+            android:id="@+id/text_title_privacy"
+            style="@style/TextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/img_privacy"
+            android:gravity="left|center"
+            android:text="@string/title_privacy"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator__privacy"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/line_bg" />
+
+    <TextView
+        android:id="@+id/content_privacy"
+        style="@style/TextSmallLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.1"
+        android:padding="2dp"
+        android:text="@string/content_privacy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/KeyButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5"
+            android:text="@string/accept_privacy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/KeyButtonDialog"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:text="@string/refuse_privacy"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+</LinearLayout>

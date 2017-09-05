@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+         />
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66000000"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/text_size"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right" />
+    </LinearLayout>
+      <ImageView
+        android:id="@+id/image_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_selected" android:visibility="gone"/>
+
+</FrameLayout>

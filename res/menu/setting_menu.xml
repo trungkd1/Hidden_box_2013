@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:visible="false"
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/setting"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:visible="false"
+        android:id="@+id/menu_mode"
+        android:icon="@drawable/menu_mode_bg"
+        android:title="@string/mode"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:visible="false"
+        android:id="@+id/menu_cancel"
+        android:icon="@drawable/menu_cancel_bg"
+        android:title="@string/cancel"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:visible="false"
+        android:id="@+id/menu_edit_show"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/function"
+        yourapp:showAsAction="ifRoom"/>
+
+</menu>
